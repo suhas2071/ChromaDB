@@ -1,0 +1,39 @@
+# Enterprise AI Knowledge Base Experiment Document
+
+## 1. Amazon Bedrock Overview
+Amazon Bedrock is a fully managed service for building generative AI applications using foundation models. It allows developers to access models from multiple providers through API calls without managing GPU infrastructure. Enterprises use Bedrock for chatbots, summarization, document search, content generation, and agentic AI workflows.
+
+Bedrock is useful when an organization wants to experiment with different foundation models such as Claude, Llama, Mistral, Titan, or other supported models. The benefit is that teams can focus on business logic rather than model hosting, scaling, and infrastructure operations.
+
+## 2. Knowledge Bases and RAG
+Retrieval Augmented Generation, commonly called RAG, is used when an LLM needs access to private or domain-specific information. In a RAG architecture, enterprise documents are converted into embeddings and stored in a vector database. When a user asks a question, the system retrieves relevant chunks and sends them to the LLM as context.
+
+A knowledge base improves answer accuracy because the model does not need to rely only on its pre-trained knowledge. It can use fresh policy documents, invoices, manuals, contracts, training notes, or project documentation stored in a vector database.
+
+## 3. Semantic Chunking
+Semantic chunking is a document splitting strategy that creates chunks based on meaning rather than fixed character count. Instead of cutting text every 500 or 1000 characters, semantic chunking detects where the topic or meaning changes. This improves retrieval quality because each chunk contains a complete thought.
+
+For example, a paragraph about Amazon Bedrock pricing should not be mixed with a paragraph about identity and access management. If both topics are placed in the same chunk, retrieval may become noisy. Semantic chunking tries to keep related sentences together and separate unrelated ideas.
+
+## 4. ChromaDB as Vector Store
+ChromaDB is an open-source vector database widely used for local RAG experiments. It stores embeddings and metadata, and supports similarity search. Developers often use ChromaDB with LangChain because it is easy to set up for classroom demos, proof of concepts, and small-scale experiments.
+
+In a typical experiment, documents are loaded using a LangChain document loader, split into meaningful chunks, converted into embeddings, and inserted into ChromaDB. Later, user queries are embedded and compared against stored vectors to retrieve relevant chunks.
+
+## 5. Agentic AI Use Case
+Agentic AI goes beyond normal chatbot behavior. An AI agent can reason, decide which tool to use, call APIs, access knowledge bases, and complete multi-step tasks. For example, a travel assistant agent can search flights, compare hotels, create an itinerary, and send the result to a user.
+
+In enterprise scenarios, agentic AI can support insurance claim processing, IT ticket triage, HR resume screening, supply chain forecasting, and cloud cost analysis. These use cases often require strong retrieval because the agent must use correct business information before taking action.
+
+## 6. Security and Governance
+Enterprise AI systems must be designed with security, privacy, and governance in mind. Sensitive documents should be handled carefully. Access control, encryption, logging, auditing, and responsible AI guardrails are important when building production RAG systems.
+
+A secure RAG system should ensure that users can retrieve only the information they are allowed to access. If a user is not permitted to view payroll data or customer contracts, the retrieval layer should not expose those chunks to the LLM.
+
+## 7. Example Questions for Testing
+What is semantic chunking?
+Why is semantic chunking better than fixed-size chunking?
+How does ChromaDB help in a RAG pipeline?
+What is the role of embeddings in retrieval?
+How can agentic AI use a knowledge base?
+What security controls are important in enterprise RAG?
