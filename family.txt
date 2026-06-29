@@ -1,0 +1,19 @@
+This is Suhas Shirbavikar. I have 22 years of experience in the IT and training industry. I have worked on multiple enterprise technologies and delivered training across various organizations.
+
+I completed my Bachelor of Engineering in Electrical Engineering. Later, I pursued my Post Graduation in Electrical Power Systems.
+
+Throughout my career, I have been involved in application development, cloud technologies, and AI-based systems. I have also conducted sessions on LangChain, CrewAI, and Agentic AI.
+
+In the field of Generative AI, I have worked on building RAG pipelines, chatbot systems, and AI-driven automation solutions for enterprises.
+
+I have experience in developing solutions using AWS, Azure and modern DevOps practices such as Docker, Kubernetes, and CI/CD pipelines.
+
+I have also built multiple hands-on labs for learners including Resume Screening Systems, Travel Planner Agents, and IT Automation solutions using ServiceNow.
+
+In addition to technical expertise, I also focus on creating training materials such as MCQs, labs, and real-world case studies for certification preparation.
+
+I have delivered training sessions for both technical and non-technical audiences and worked closely with organizations to build their AI adoption roadmap.
+
+My expertise also includes AI frameworks like LangChain, LangGraph, CrewAI, and vector databases such as ChromaDB and Qdrant.
+
+Overall, I aim to design and deliver scalable AI solutions while helping learners understand practical implementation of emerging technologies.
